@@ -7,20 +7,10 @@
   {% assign member = include %}
 {% endif %}
 
-{%- comment -%}
-옵션:
-- width: 이미지 가로(px). 기본 220
-- round: true면 둥근(원형) 처리. 기본 true
-{%- endcomment -%}
 {% assign img_w = include.width | default: 220 %}
-{% assign round = include.round | default: true %}
 
-<div class="portrait-wrapper">
-  <div
-    class="portrait"
-    data-style="{{ include.style }}"
-    aria-label="{{ member.name | default: 'member portrait' | regex_strip }}"
-  >
+<div class="portrait-wrapper" style="text-align:center;">
+  <div class="portrait">
     <img
       src="{{ member.image | relative_url | uri_escape }}"
       class="portrait-image"
@@ -29,5 +19,25 @@
       style="width:{{ img_w }}px; height:auto;"
       {% include fallback.html %}
     >
+  </div>
+
+  <div class="portrait-links" style="margin-top:10px; font-size:1.2em;">
+    {% if member.links.email %}
+      <a href="mailto:{{ member.links.email }}" aria-label="email">
+        <i class="fas fa-envelope"></i>
+      </a>
+    {% endif %}
+
+    {% if member.links.scholar %}
+      <a href="{{ member.links.scholar }}" target="_blank" aria-label="Google Scholar">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    {% endif %}
+
+    {% if member.links.github %}
+      <a href="{{ member.links.github }}" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+    {% endif %}
   </div>
 </div>
