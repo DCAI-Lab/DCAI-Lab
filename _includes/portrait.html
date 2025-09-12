@@ -26,7 +26,7 @@
       class="portrait-image"
       alt="{{ member.name | default: 'member portrait' | regex_strip }}"
       loading="lazy"
-      style="width:{{ img_w }}px; height:auto;{% if round %} border-radius:50%;{% endif %}"
+      style="width:{{ img_w }}px; height:auto;"
       {% include fallback.html %}
     >
   </div>
