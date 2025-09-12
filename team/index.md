@@ -13,11 +13,16 @@ nav:
 {% capture right %}
 **Jungbeom Lee**  
 Assistant Professor, Korea University  
-Email: your.email@korea.ac.kr  
-[Google Scholar](/) · [GitHub](/)
 
-- Research interests: Data-centric AI, Vision, Generative AI  
-- Past: Amazon Applied Scientist, etc.
+**Education**
+- Ph.D. in ECE, Seoul National University, 2017-2023
+- B.S. in Electrical and Computer Engineering, Seoul National University, 2013-2017
+
+**Experience**
+- Applied Scientist, Amazon, Seattle, USA 2023-2025
+- Visiting Researcher, Naver AI Lab, Seongnam, Korea 2023
+- Applied Scientist Intern, Amazon, Seattle, USA 2022
+
 {% endcapture %}
 
 {%
