@@ -7,7 +7,7 @@ nav:
 ## Principal Investigator
 
 {% capture left %}
-  {% include portrait.html lookup="jungbeom-lee" style="small" %}
+  {% include portrait.html lookup="jungbeom-lee" width=400 %}
 {% endcapture %}
 
 {% capture right %}
