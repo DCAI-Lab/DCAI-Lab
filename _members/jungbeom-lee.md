@@ -1,6 +1,6 @@
 ---
 name: Jungbeom Lee
-image: images/jungbeom_lee.jpg
+image: images/jungbeom_lee.jpeg
 role: principal-investigator
 affiliation: Assistant Professor
 ---
