@@ -11,18 +11,18 @@ nav:
 {% endcapture %}
 
 {% capture right %}
-<div style="line-height:1.3; margin:0;">
+<div style="line-height:1; margin:0;">
   <p><strong>Jungbeom Lee</strong><br>
   Assistant Professor, Korea University</p>
 
   <p><strong>Education</strong></p>
-  <ul style="margin:0; line-height:1.3;">
+  <ul style="margin:0; line-height:1;">
     <li>Ph.D. in ECE, Seoul National University, 2017–2023</li>
     <li>B.S. in Electrical and Computer Engineering, Seoul National University, 2013–2017</li>
   </ul>
 
   <p><strong>Experience</strong></p>
-  <ul style="margin:0; line-height:1.3;">
+  <ul style="margin:0; line-height:1;">
     <li>Applied Scientist, Amazon, Seattle, USA 2023–2025</li>
     <li>Visiting Researcher, Naver AI Lab, Seongnam, Korea 2023</li>
     <li>Applied Scientist Intern, Amazon, Seattle, USA 2022</li>
