@@ -7,7 +7,17 @@
   {% assign member = include %}
 {% endif %}
 
-{% assign img_w = include.width | default: 220 %}
+{%- comment -%}
+옵션:
+- width: 이미지 가로(px). 기본 240
+- round: true면 원형(둥글게). 기본 false
+- icon_gap: 아이콘 사이 여백(px). 기본 10
+- image_icon_gap: 사진과 아이콘 줄 사이 여백(px). 기본 6
+{%- endcomment -%}
+{% assign img_w = include.width | default: 240 %}
+{% assign round = include.round | default: false %}
+{% assign icon_gap = include.icon_gap | default: 10 %}
+{% assign image_icon_gap = include.image_icon_gap | default: 6 %}
 
 <div class="portrait-wrapper" style="text-align:center;">
   <div class="portrait">
@@ -16,26 +26,31 @@
       class="portrait-image"
       alt="{{ member.name | default: 'member portrait' | regex_strip }}"
       loading="lazy"
-      style="width:{{ img_w }}px; height:auto;"
+      style="width:{{ img_w }}px; height:auto;{% if round %}border-radius:50%;{% endif %}"
       {% include fallback.html %}
     >
   </div>
 
-  <div class="portrait-links" style="margin-top:10px; font-size:1.2em;">
+  {# --- 아이콘 링크 줄 --- #}
+  <div class="portrait-links" style="margin-top:{{ image_icon_gap }}px;">
     {% if member.links.email %}
-      <a href="mailto:{{ member.links.email }}" aria-label="email">
+      <a href="mailto:{{ member.links.email }}" aria-label="Email"
+         style="margin:0 {{ icon_gap }}px; display:inline-block;">
         <i class="fas fa-envelope"></i>
       </a>
     {% endif %}
 
     {% if member.links.scholar %}
-      <a href="{{ member.links.scholar }}" target="_blank" aria-label="Google Scholar">
-        <i class="ai ai-google-scholar"></i>
+      <a href="{{ member.links.scholar }}" target="_blank" rel="noopener" aria-label="Google Scholar"
+         style="margin:0 {{ icon_gap }}px; display:inline-block;">
+        <!-- 두 가지 중 하나라도 뜨게: 기본 + square 예비 -->
+        <i class="ai ai-google-scholar" style="font-style:normal;"></i>
       </a>
     {% endif %}
 
     {% if member.links.github %}
-      <a href="{{ member.links.github }}" target="_blank" aria-label="GitHub">
+      <a href="{{ member.links.github }}" target="_blank" rel="noopener" aria-label="GitHub"
+         style="margin:0 {{ icon_gap }}px; display:inline-block;">
         <i class="fab fa-github"></i>
       </a>
     {% endif %}
