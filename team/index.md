@@ -11,6 +11,7 @@ nav:
 {% endcapture %}
 
 {% capture right %}
+<div style="line-height:1.3; margin-top:0.2em; margin-bottom:0.2em;">
 **Jungbeom Lee**  
 Assistant Professor, Korea University  
 
@@ -22,7 +23,7 @@ Assistant Professor, Korea University
 - Applied Scientist, Amazon, Seattle, USA 2023-2025
 - Visiting Researcher, Naver AI Lab, Seongnam, Korea 2023
 - Applied Scientist Intern, Amazon, Seattle, USA 2022
-
+</div>
 {% endcapture %}
 
 {%
