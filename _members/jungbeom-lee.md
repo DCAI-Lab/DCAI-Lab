@@ -3,12 +3,8 @@ name: Jungbeom Lee
 image: images/jungbeom_lee.jpeg
 role: principal-investigator
 affiliation: Assistant Professor
+links:
+  email: your.email@korea.ac.kr
+  scholar: https://scholar.google.com/citations?user=XXXX
+  github: https://github.com/yourname
 ---
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
