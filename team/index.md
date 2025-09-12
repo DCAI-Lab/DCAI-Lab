@@ -40,7 +40,7 @@ Email: your.email@korea.ac.kr
 - 템플릿의 'list'로 members를 role=phd로 필터
 - 두 컬럼으로 나누기 위해 Liquid로 짝/홀 인덱스를 분리
 - 각 항목은 portrait 컴포넌트의 'tiny' 스타일 + 옆에 정보
-
+{% endcomment %}
 
 {% assign phd_all = site.members | where:"role","phd" %}
 
@@ -100,5 +100,5 @@ Email: your.email@korea.ac.kr
 
 
 {% endcapture %}
-{% endcomment %}
+
 {% include grid.html style="square" content=content %}
