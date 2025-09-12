@@ -7,11 +7,7 @@ nav:
 ## Principal Investigator
 
 {% capture left %}
-  {%
-    include portrait.html
-    lookup="jungbeom-lee"   # _members/jungbeom-lee.md (확장자 제외)
-    style="small"
-  %}
+  {% include portrait.html lookup="jungbeom-lee" style="small" %}
 {% endcapture %}
 
 {% capture right %}
