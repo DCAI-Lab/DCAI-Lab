@@ -494,38 +494,41 @@
 
 
 <footer class="background" style="--image: url('/DCAI-Lab/images/background.jpg')" data-dark="true" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
+  
+  <style>
+    /* --- footer 3열 전용 미니 CSS (빠르게 적용용) --- */
+    .footer-grid{
+      display:grid; grid-template-columns: 1fr 2fr 1fr; gap: 1rem; align-items:center;
+    }
+    .footer-left img{ max-height:64px; width:auto; border-radius:8px; display:block; }
+    .footer-center p, .footer-right p{ margin: .2rem 0; line-height:1.4; }
+    .footer-center, .footer-right{ font-size: .95rem; }
+    @media (max-width: 768px){
+      .footer-grid{ grid-template-columns: 1fr; text-align:center; }
+      .footer-left img{ margin: 0 auto; }
+    }
+  </style>
+
+  <div class="footer-grid">
+    <!-- 왼쪽: 이미지 -->
+    <div class="footer-left">
+      <!-- 원하시는 로고/이미지 경로로 교체 -->
+      <img src="/DCAI-Lab/images/logo.png" alt="Korea Unversity logo">
     </div>
-  -->
 
-  <div>
-    
-      
-      
-      
+    <!-- 가운데: 2–3줄 텍스트 -->
+    <div class="footer-center">
+      <p><strong>Data-Centric AI Lab</strong></p>
+      <p>Korea University, Dept. of Computer Science &amp; Engineering</p>
+      <p><a href="mailto:dcai@korea.ac.kr">dcai@korea.ac.kr</a></p>
+    </div>
 
-
-
-  <div class="button-wrapper">
-    <a class="button" href="mailto:contact@DCAI-Lab.com" data-tooltip="Email" data-style="bare" aria-label="Email">
-      <i class="icon fa-solid fa-envelope"></i>
-      
-    </a>
-  </div>
-
-
-    
-  </div>
-
-  <div>
-    © 2025
-    Data-Cetric AI Lab
-      |   Built with
-    <a href="https://github.com/greenelab/lab-website-template">
-      Lab Website Template
-    </a>
+    <!-- 오른쪽: 2–3줄 텍스트 -->
+    <div class="footer-right">
+      <p>© 2025 Data-Cetric AI Lab</p>
+      <p>Built with <a href="https://github.com/greenelab/lab-website-template">Lab Website Template</a></p>
+      <p><a href="/DCAI-Lab/privacy">Privacy</a></p>
+    </div>
   </div>
 
   <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
