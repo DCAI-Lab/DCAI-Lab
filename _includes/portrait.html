@@ -7,45 +7,27 @@
   {% assign member = include %}
 {% endif %}
 
-{% assign type = site.data.types[member.role] %}
+{%- comment -%}
+옵션:
+- width: 이미지 가로(px). 기본 220
+- round: true면 둥근(원형) 처리. 기본 true
+{%- endcomment -%}
+{% assign img_w = include.width | default: 220 %}
+{% assign round = include.round | default: true %}
 
 <div class="portrait-wrapper">
-  <a
-    {% if page.slug != member.slug %}
-      href="{{ member.url | relative_url | uri_escape }}"
-    {% endif %}
+  <div
     class="portrait"
     data-style="{{ include.style }}"
-    aria-label="{{ member.name | default: "member link" | regex_strip }}"
+    aria-label="{{ member.name | default: 'member portrait' | regex_strip }}"
   >
-    {% if type %}
-      {% include icon.html icon=type.icon %}
-    {% endif %}
-
     <img
       src="{{ member.image | relative_url | uri_escape }}"
       class="portrait-image"
-      alt="member portrait"
+      alt="{{ member.name | default: 'member portrait' | regex_strip }}"
       loading="lazy"
+      style="width:{{ img_w }}px; height:auto;{% if round %} border-radius:50%;{% endif %}"
       {% include fallback.html %}
     >
-
-    {% if member.name %}
-      <span class="portrait-name">
-        {{ member.name }}
-      </span>
-    {% endif %}
-
-    {% if member.description or type %}
-      <span class="portrait-description">
-        {{ member.description | default: type.description }}
-      </span>
-    {% endif %}
-
-    {% if member.affiliation %}
-      <span class="portrait-affiliation">
-        {{ member.affiliation }}
-      </span>
-    {% endif %}
-  </a>
+  </div>
 </div>
