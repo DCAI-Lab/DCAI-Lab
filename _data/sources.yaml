@@ -8,27 +8,3 @@
   publisher: arXiv
   date: 2025-06-01
   link: https://arxiv.org/abs/2506.03621
-
-- title: Know No Better: A Data-Driven Approach for Enhancing Negation Awareness in CLIP
-  authors:
-    - Junsung Park
-    - Jungbeom Lee
-    - Jongyoon Song
-    - Sangwon Yu
-    - Dahuin Jung
-    - Sungroh Yoon
-  publisher: ICCV
-  date: 2025-10-15
-  link: https://arxiv.org/pdf/2501.10913?
-
-- title: Style-Friendly SNR Sampler for Style-Driven Generation
-  authors:
-    - Jooyoung Choi
-    - Chaehun Shin
-    - Yeongtak Oh
-    - Heeseung Kim
-    - Jungbeom Lee
-    - Sungroh Yoon
-  publisher: arXiv
-  date: 2024-11-15
-  link: https://arxiv.org/pdf/2411.14793?
