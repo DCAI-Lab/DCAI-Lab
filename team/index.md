@@ -11,19 +11,23 @@ nav:
 {% endcapture %}
 
 {% capture right %}
-<div class="pi-right">
-**Jungbeom Lee**  
-Assistant Professor, CSE, Korea University  
+<div style="line-height:1; margin:0;">
+  <p><strong>Jungbeom Lee</strong><br>
+  Assistant Professor, CSE, Korea University</p>
 
-**Education**
-- Ph.D. in ECE, Seoul National University, 2017–2023
-- B.S. in ECE, Seoul National University, 2013–2017
+  <p><strong>Education</strong></p>
+  <ul style="margin:0; line-height:1;">
+    <li>Ph.D. in ECE, Seoul National University, 2017–2023</li>
+    <li>B.S. in ECE, Seoul National University, 2013–2017</li>
+  </ul>
 
-**Experience**
-- Applied Scientist, Amazon, Seattle, USA, 2023–2025
-- Visiting Researcher, Naver AI Lab, Seongnam, Korea, 2023
-- Applied Scientist Intern, Amazon, Seattle, USA, 2022
-- Research Intern, Naver AI Lab, Seongnam, Korea, 2021, 2022
+  <p><strong>Experience</strong></p>
+  <ul style="margin:0; line-height:1;">
+    <li>Applied Scientist, Amazon, Seattle, USA, 2023–2025</li>
+    <li>Visiting Researcher, Naver AI Lab, Seongnam, Korea, 2023</li>
+    <li>Applied Scientist Intern, Amazon, Seattle, USA, 2022</li>
+    <li>Research Intern, Naver AI Lab, Seongnam, Korea, 2021, 2022</li>
+  </ul>
 </div>
 {% endcapture %}
 
@@ -33,7 +37,7 @@ Assistant Professor, CSE, Korea University
   col2=right
 %}
 
----
+—
 
 ## PhD Students
 
