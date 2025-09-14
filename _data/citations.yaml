@@ -9,7 +9,203 @@
   - Jungbeom Lee
   - Sungroh Yoon
   publisher: arXiv
-  date: '2025-06-01'
-  link: https://arxiv.org/abs/2506.03621
+  date: '2025-06-14'
+  link: https://arxiv.org/pdf/2506.03621?
+  plugin: sources.py
+  file: sources.yaml
+- title: 'Know "No" Better: A Data-Driven Approach for Enhancing Negation Awareness
+    in CLIP'
+  authors:
+  - Junsung Park
+  - Jungbeom Lee
+  - Jongyoon Song
+  - Sangwon Yu
+  - Dahuin Jung
+  - Sungroh Yoon
+  publisher: ICCV
+  date: '2025-10-01'
+  link: https://arxiv.org/pdf/2501.10913?
+  plugin: sources.py
+  file: sources.yaml
+- title: Style-Friendly SNR Sampler for Style-Driven Generation
+  authors:
+  - Jooyoung Choi
+  - Chaehun Shin
+  - Yeongtak Oh
+  - Heeseung Kim
+  - Jungbeom Lee
+  - Sungroh Yoon
+  publisher: arXiv
+  date: '2024-11-22'
+  link: https://arxiv.org/pdf/2411.14793?
+  plugin: sources.py
+  file: sources.yaml
+- title: Toward Interactive Regional Understanding in Vision-Large Language Models
+  authors:
+  - Jungbeom Lee
+  - Sanghyuk Chun
+  - Sangdoo Yun
+  publisher: NAACL
+  date: '2024-06-01'
+  link: https://arxiv.org/pdf/2403.18260?
+  plugin: sources.py
+  file: sources.yaml
+- title: Anti-Adversarially Manipulated Attributions for Weakly Supervised Semantic
+    Segmentation and Object Localization
+  authors:
+  - Jungbeom Lee
+  - Eunji Kim
+  - Jisoo Mok
+  - Sungroh Yoon
+  publisher: TPAMI
+  date: '2024-03-01'
+  link: https://arxiv.org/pdf/2204.04890
+  plugin: sources.py
+  file: sources.yaml
+- title: Weakly Supervised Referring Image Segmentation with Intra-Chunk and Inter-Chunk
+    Consistency
+  authors:
+  - Jungbeom Lee
+  - Sungjin Lee
+  - Jinseok Nam
+  - Seunghak Yu
+  - Jaeyoung Do
+  - Tara Taghavi
+  publisher: ICCV
+  date: '2023-10-01'
+  link: https://openaccess.thecvf.com/content/ICCV2023/papers/Lee_Weakly_Supervised_Referring_Image_Segmentation_with_Intra-Chunk_and_Inter-Chunk_Consistency_ICCV_2023_paper.pdf
+  plugin: sources.py
+  file: sources.yaml
+- title: Improving Visual Prompt Tuning for Self-supervised Vision Transformers
+  authors:
+  - Seungryong Yoo
+  - Eunji Kim
+  - Dahuin Jung
+  - Jungbeom Lee
+  - Sungroh Yoon
+  publisher: ICML
+  date: '2023-06-01'
+  link: https://proceedings.mlr.press/v202/yoo23a/yoo23a.pdf
+  plugin: sources.py
+  file: sources.yaml
+- title: Weakly Supervised Semantic Segmentation using Out-of-Distribution Data
+  authors:
+  - Jungbeom Lee
+  - Seong Joon Oh
+  - Sangdoo Yun
+  - Junsuk Choe
+  - Eunji Kim
+  - Sungroh Yoon
+  publisher: CVPR
+  date: '2022-06-03'
+  link: https://openaccess.thecvf.com/content/CVPR2022/papers/Lee_Weakly_Supervised_Semantic_Segmentation_Using_Out-of-Distribution_Data_CVPR_2022_paper.pdf
+  plugin: sources.py
+  file: sources.yaml
+- title: Bridging the Gap between Classification and Localization for Weakly Supervised
+    Object Localization
+  authors:
+  - Eunji Kim
+  - Siwon Kim
+  - Jungbeom Lee
+  - Hyunwoo Kim
+  - Sungroh Yoon
+  publisher: CVPR
+  date: '2022-06-01'
+  link: https://openaccess.thecvf.com/content/CVPR2022/papers/Kim_Bridging_the_Gap_Between_Classification_and_Localization_for_Weakly_Supervised_CVPR_2022_paper.pdf
+  plugin: sources.py
+  file: sources.yaml
+- title: Perception Prioritized Training of Diffusion Models
+  authors:
+  - Jooyoung Choi
+  - Jungbeom Lee
+  - Chaehun Shin
+  - Sungwon Kim
+  - Hyunwoo Kim
+  - Sungroh Yoon
+  publisher: CVPR
+  date: '2022-06-02'
+  link: https://openaccess.thecvf.com/content/CVPR2022/papers/Choi_Perception_Prioritized_Training_of_Diffusion_Models_CVPR_2022_paper.pdf
+  plugin: sources.py
+  file: sources.yaml
+- title: Reducing Information Bottleneck for Weakly Supervised Semantic Segmentation
+  authors:
+  - Jungbeom Lee
+  - Jooyoung Choi
+  - Jisoo Mok
+  - Sungroh Yoon
+  publisher: NeurIPS
+  date: '2021-12-01'
+  link: https://proceedings.neurips.cc/paper/2021/file/e6384711491713d29bc63fc5eeb5ba4f-Paper.pdf
+  plugin: sources.py
+  file: sources.yaml
+- title: Toward Spatially Unbiased Generative Models
+  authors:
+  - Jooyoung Choi
+  - Jungbeom Lee
+  - Yonghyun Jeong
+  - Sungroh Yoon
+  publisher: ICCV
+  date: '2021-10-01'
+  link: https://arxiv.org/pdf/2108.01285
+  plugin: sources.py
+  file: sources.yaml
+- title: Anti-Adversarially Manipulated Attributions for Weakly and Semi-Supervised
+    Semantic Segmentation
+  authors:
+  - Jungbeom Lee
+  - Eunji Kim
+  - Sungroh Yoon
+  publisher: CVPR
+  date: '2021-06-01'
+  link: https://openaccess.thecvf.com/content/CVPR2021/papers/Lee_Anti-Adversarially_Manipulated_Attributions_for_Weakly_and_Semi-Supervised_Semantic_Segmentation_CVPR_2021_paper.pdf
+  plugin: sources.py
+  file: sources.yaml
+- title: 'BBAM: Bounding Box Attribution Map for Weakly Supervised Semantic and Instance
+    Segmentation'
+  authors:
+  - Jungbeom Lee
+  - Jihun Yi
+  - Chaehun Shin
+  - Sungroh Yoon
+  publisher: CVPR
+  date: '2021-06-01'
+  link: https://openaccess.thecvf.com/content/CVPR2021/papers/Lee_BBAM_Bounding_Box_Attribution_Map_for_Weakly_Supervised_Semantic_and_CVPR_2021_paper.pdf
+  plugin: sources.py
+  file: sources.yaml
+- title: Frame-to-Frame Aggregation of Active Regions in Web Videos for Weakly Supervised
+    Semantic Segmentation
+  authors:
+  - Jungbeom Lee
+  - Eunji Kim
+  - Sungmin Lee
+  - Jangho Lee
+  - Sungroh Yoon
+  publisher: ICCV
+  date: '2019-10-01'
+  link: https://openaccess.thecvf.com/content_ICCV_2019/papers/Lee_Frame-to-Frame_Aggregation_of_Active_Regions_in_Web_Videos_for_Weakly_ICCV_2019_paper.pdf
+  plugin: sources.py
+  file: sources.yaml
+- title: Mutual Suppression Network for Video Prediction using Disentangled Features
+  authors:
+  - Jungbeom Lee
+  - Jangho Lee
+  - Sungmin Lee
+  - Sungroh Yoon
+  publisher: BMVC
+  date: '2019-01-01'
+  link: https://arxiv.org/pdf/1804.04810
+  plugin: sources.py
+  file: sources.yaml
+- title: 'FickleNet: Weakly and Semi-supervised Semantic Image Segmentation using
+    Stochastic Inference'
+  authors:
+  - Jungbeom Lee
+  - Eunji Kim
+  - Sungmin Lee
+  - Jangho Lee
+  - Sungroh Yoon
+  publisher: CVPR
+  date: '2019-06-01'
+  link: https://openaccess.thecvf.com/content_CVPR_2019/papers/Lee_FickleNet_Weakly_and_Semi-Supervised_Semantic_Image_Segmentation_Using_Stochastic_Inference_CVPR_2019_paper.pdf
   plugin: sources.py
   file: sources.yaml
