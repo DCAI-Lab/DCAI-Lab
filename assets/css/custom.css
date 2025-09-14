@@ -1,16 +1,32 @@
-/* Team 페이지 오른쪽 칼럼의 텍스트 줄간격 줄이기 */
-.cols .col2 {
-  line-height: 1.0;   /* 기본 본문 줄간격 줄임 (원래는 1.6~1.8 정도일 수 있음) */
+/* 오른쪽 칼럼 컨테이너 자체 줄간격 살짝 축소 */
+.cols .col2,
+.cols > div:nth-child(2) {
+  line-height: 1.3 !important;
 }
 
-/* 리스트 항목(<ul><li>) 사이 여백 줄이기 */
-.cols .col2 ul {
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
-  padding-left: 1.2em;   /* 불릿 들여쓰기 조절 (원하는 만큼) */
-  line-height: 1.0;      /* 리스트 줄간격 더 촘촘하게 */
+/* 리스트 블록 여백/줄간격 */
+.cols .col2 ul,
+.cols > div:nth-child(2) ul {
+  margin-top: 0.2em !important;
+  margin-bottom: 0.2em !important;
+  padding-left: 1.1em !important;
+  line-height: 1.25 !important;
 }
 
-.cols .col2 li {
-  margin-bottom: 0.2em;  /* 리스트 항목끼리 여백 줄이기 */
+/* 리스트 항목 간격 */
+.cols .col2 li,
+.cols > div:nth-child(2) li {
+  margin-bottom: 0.15em !important;
+}
+
+/* 문단/제목 사이 간격도 조금 줄임 */
+.cols .col2 p,
+.cols > div:nth-child(2) p {
+  margin-top: 0.2em !important;
+  margin-bottom: 0.2em !important;
+}
+.cols .col2 h2, .cols .col2 h3,
+.cols > div:nth-child(2) h2, .cols > div:nth-child(2) h3 {
+  margin-top: 0.4em !important;
+  margin-bottom: 0.3em !important;
 }
