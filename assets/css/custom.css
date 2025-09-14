@@ -33,7 +33,7 @@
 
 /* 사진 아래 아이콘 크기/간격 조정 */
 .portrait-links {
-  margin-top: 2px;       /* 사진-아이콘 사이 여백 */
+  margin-top: 2px !important;       /* 사진-아이콘 사이 여백 */
   text-align: center;
 }
 .portrait-links i {
