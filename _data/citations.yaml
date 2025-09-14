@@ -11,6 +11,5 @@
   publisher: arXiv
   date: '2025-06-01'
   link: https://arxiv.org/abs/2506.03621
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
   plugin: sources.py
   file: sources.yaml
