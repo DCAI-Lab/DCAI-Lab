@@ -24,5 +24,5 @@ Woojung Hall of Informatics (우정정보관) #204, 145 Anam-ro, Seongbuk-gu, Se
   include button.html
   type="address"
   tooltip="Our location on Google Maps for easy navigation"
-  link="[https://www.google.com/maps](https://maps.app.goo.gl/XytHbZwZ51ZATCQ89)"
+  link="https://maps.app.goo.gl/XytHbZwZ51ZATCQ89"
 %}
