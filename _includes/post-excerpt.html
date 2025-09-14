@@ -13,7 +13,7 @@
     {% assign url = post.url | relative_url | uri_escape %}
     {% assign title = post.title %}
     {% assign image = post.image | relative_url | uri_escape %}
-
+    {% comment %}
     {% if image %}
       <a
         href="{{ url }}"
@@ -28,7 +28,7 @@
         >
       </a>
     {% endif %}
-
+    {% endcomment %}
     <div class="post-excerpt-text">
       <a href="{{ url }}">{{ title }}</a>
 
