@@ -29,7 +29,7 @@
     {% if dark == "true" or dark == "false" %}
       data-dark="{{ dark }}"
     {% endif %}
-    {% if image %}
+    {% if image and page.collection != "publications" %}
       style="--image: url('{{ image | relative_url | uri_escape }}')"
     {% endif %}
   >
