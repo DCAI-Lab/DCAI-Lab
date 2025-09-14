@@ -1,3 +1,8 @@
+
+.page-publications section.background {
+  --image: none !important;
+}
+
 /* 오른쪽 칼럼 컨테이너 자체 줄간격 살짝 축소 */
 .cols .col2,
 .cols > div:nth-child(2) {
