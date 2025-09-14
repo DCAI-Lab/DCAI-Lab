@@ -6,7 +6,7 @@ nav:
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
-
+{% include section.html %}
 Woojung Hall of Informatics (우정정보관) #204, 145 Anam-ro, Seongbuk-gu, Seoul, Korea
 {%
   include button.html
