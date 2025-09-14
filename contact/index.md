@@ -5,7 +5,8 @@ nav:
   tooltip: Email, address, and location
 ---
 
-<div align="center">
+<div class="contact-center">
+  
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
 Woojung Hall of Informatics (우정정보관) #204, 145 Anam-ro, Seongbuk-gu, Seoul, Korea
