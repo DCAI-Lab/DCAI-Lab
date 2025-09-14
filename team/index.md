@@ -13,7 +13,7 @@ nav:
 {% capture right %}
 <div style="line-height:1; margin:0;">
   <p><strong>Jungbeom Lee</strong><br>
-  Assistant Professor, Department of Computer Science and Engineering, Korea University</p>
+  Assistant Professor, CSE, Korea University</p>
 
   <p><strong>Education</strong></p>
   <ul style="margin:0; line-height:1;">
