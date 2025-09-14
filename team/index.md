@@ -37,7 +37,7 @@ nav:
   col2=right
 %}
 
-—
+
 
 ## PhD Students
 
