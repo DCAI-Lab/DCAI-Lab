@@ -1,15 +1,26 @@
 {% if include.lookup %}
-  {% assign member = site.members | where_exp: "m", "m.slug == include.lookup" | first %}
+  {% assign member = site.members 
+    | where_exp: "m", "m.slug == include.lookup"
+    | first %}
+{% elsif include.slug %}
+  {% assign member = site.members 
+    | where_exp: "m", "m.slug == include.slug"
+    | first %}
 {% else %}
   {% assign member = include %}
 {% endif %}
 
 {%- comment -%}
-이메일을 두 경로에서 찾음:
-1) member.links.email (기존 portrait 구조)
-2) member.email (YAML 직접 입력)
+이메일은 두 경로 모두 지원:
+1) member.links.email  (members/*.md에 links.email로 저장한 경우)
+2) member.email        (front matter에 email: 으로 직접 넣은 경우)
 {%- endcomment -%}
-{% assign email = member.links.email | default: member.email %}
+{% assign email = nil %}
+{% if member.links and member.links.email %}
+  {% assign email = member.links.email %}
+{% elsif member.email %}
+  {% assign email = member.email %}
+{% endif %}
 
 <div class="portrait portrait-undergrad" data-style="{{ include.style }}">
   <span class="portrait-name" style="font-size:1.1rem;">
