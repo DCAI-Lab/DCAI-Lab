@@ -332,14 +332,14 @@
 
   
     <link
-      href="/DCAI-Lab/_styles/portrait-undergrad.css"
+      href="/DCAI-Lab/_styles/portrait.css"
       rel="stylesheet"
     />
   
 
   
     <link
-      href="/DCAI-Lab/_styles/portrait.css"
+      href="/DCAI-Lab/_styles/portrait_undergrad.css"
       rel="stylesheet"
     />
   
