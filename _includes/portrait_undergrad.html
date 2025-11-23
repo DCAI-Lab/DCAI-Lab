@@ -1,21 +1,20 @@
----
----
+/* ---------------------------------------
+   Undergraduate Portrait (Standalone)
+   --------------------------------------- */
 
 .portrait-undergrad {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;              /* 이름 ↔ 이메일 간 간격 */
+  gap: 10px;              /* name ↔ email spacing */
   width: 100%;
   padding: 6px 0;
   margin: 4px 0;
   text-align: left;
   font-size: 1.1rem;
   line-height: 1.4;
-  justify-content: flex-start;   /* 왼쪽 정렬 */
 }
 
-/* 이름 부분 */
 .portrait-undergrad-name {
   font-family: var(--heading);
   font-weight: var(--semi-bold);
@@ -23,11 +22,10 @@
   color: #000;
 }
 
-/* 이메일은 바로 옆 */
 .portrait-undergrad-email {
   font-size: 1rem;
   color: #555;
-  white-space: nowrap;   /* 줄바꿈 방지 */
+  white-space: nowrap;     /* prevents line break */
 }
 
 .portrait-undergrad-email a {
