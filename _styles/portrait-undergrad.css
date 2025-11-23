@@ -1,0 +1,51 @@
+@charset "UTF-8";
+.portrait-undergrad {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 6px 20px;
+  width: auto;
+  max-width: calc(100% - 40px);
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+/* tiny 스타일: portrait[data-style="tiny"] 비슷한 느낌 */
+.portrait-undergrad.tiny {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: unset;
+  text-align: left;
+}
+
+/* 이름 스타일: 기존 portrait-name 과 비슷하게 */
+.portrait-undergrad-name {
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+}
+
+/* tiny일 때는 글자 조금만 줄이기 (선택) */
+.portrait-undergrad.tiny .portrait-undergrad-name {
+  font-size: 0.95rem;
+}
+
+/* 이메일 라인 */
+.portrait-undergrad-email {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.portrait-undergrad-email a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* hover 시 살짝 강조 (선택) */
+.portrait-undergrad:hover .portrait-undergrad-name {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=portrait-undergrad.css.map */
