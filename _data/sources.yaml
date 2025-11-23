@@ -1,3 +1,15 @@
+- title: Style-Friendly SNR Sampler for Style-Driven Generation
+  authors:
+    - Jooyoung Choi
+    - Chaehun Shin
+    - Yeongtak Oh
+    - Heeseung Kim
+    - Jungbeom Lee
+    - Sungroh Yoon
+  publisher: WACV
+  date: 2026-03-02
+  link: https://arxiv.org/pdf/2411.14793?
+
 - title: Negative-Guided Subject Fidelity Optimization for Zero-Shot Subject-Driven Generation
   authors:
     - Chaehun Shin
@@ -22,17 +34,7 @@
   date: 2025-10-01
   link: https://arxiv.org/pdf/2501.10913?
 
-- title: Style-Friendly SNR Sampler for Style-Driven Generation
-  authors:
-    - Jooyoung Choi
-    - Chaehun Shin
-    - Yeongtak Oh
-    - Heeseung Kim
-    - Jungbeom Lee
-    - Sungroh Yoon
-  publisher: arXiv
-  date: 2024-11-22
-  link: https://arxiv.org/pdf/2411.14793?
+
   
 
 - title: Toward Interactive Regional Understanding in Vision-Large Language Models
