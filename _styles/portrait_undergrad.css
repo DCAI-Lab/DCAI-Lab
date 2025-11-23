@@ -1,50 +1,47 @@
 @charset "UTF-8";
+/* Undergrad uses the same layout as `.portrait`, so override alignment */
 .portrait-undergrad {
-  position: relative;
   display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 6px 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left !important;
   width: auto;
-  max-width: calc(100% - 40px);
-  text-decoration: none;
-  line-height: 1.2;
+  margin: 6px 20px;
+  line-height: 1.4;
 }
 
-/* tiny 스타일: portrait[data-style="tiny"] 비슷한 느낌 */
-.portrait-undergrad.tiny {
+/* override tiny style exactly like portrait[data-style="tiny"] */
+.portrait[data-style=tiny].portrait-undergrad {
   flex-direction: row;
   align-items: center;
   gap: 10px;
   width: unset;
-  text-align: left;
+  text-align: left !important;
 }
 
-/* 이름 스타일: 기존 portrait-name 과 비슷하게 */
-.portrait-undergrad-name {
+/* 이름 스타일 그대로 유지 + 크게 */
+.portrait-undergrad .portrait-name {
   font-family: var(--heading);
   font-weight: var(--semi-bold);
+  font-size: 1.1rem;
 }
 
-/* tiny일 때는 글자 조금만 줄이기 (선택) */
-.portrait-undergrad.tiny .portrait-undergrad-name {
+/* 이메일 바로 옆 */
+.portrait-undergrad .portrait-email {
   font-size: 0.95rem;
-}
-
-/* 이메일 라인 */
-.portrait-undergrad-email {
-  font-size: 0.85rem;
   color: #555;
+  white-space: nowrap;
+  margin-left: 8px;
 }
 
-.portrait-undergrad-email a {
+.portrait-undergrad .portrait-email a {
   color: inherit;
   text-decoration: none;
 }
 
-/* hover 시 살짝 강조 (선택) */
-.portrait-undergrad:hover .portrait-undergrad-name {
+.portrait-undergrad .portrait-email a:hover {
   text-decoration: underline;
 }
 
