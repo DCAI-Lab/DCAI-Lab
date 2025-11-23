@@ -1,38 +1,33 @@
-/* ---------------------------------------
-   Undergraduate Portrait (Standalone)
-   --------------------------------------- */
+{% if include.lookup %}
+  {% assign member = site.members 
+    | where_exp: "member", "member.slug == include.lookup"
+    | first
+  %}
+{% else %}
+  {% assign member = include %}
+{% endif %}
 
-.portrait-undergrad {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10px;              /* name ↔ email spacing */
-  width: 100%;
-  padding: 6px 0;
-  margin: 4px 0;
-  text-align: left;
-  font-size: 1.1rem;
-  line-height: 1.4;
-}
+{%- comment -%}
+이메일은 두 경로 모두 지원:
+- member.links.email (기존 portrait.html 구조)
+- member.email (데이터에서 바로 email 필드 쓴 경우)
+{%- endcomment -%}
+{% assign email = nil %}
+{% if member.links and member.links.email %}
+  {% assign email = member.links.email %}
+{% elsif member.email %}
+  {% assign email = member.email %}
+{% endif %}
 
-.portrait-undergrad-name {
-  font-family: var(--heading);
-  font-weight: var(--semi-bold);
-  font-size: 1.15rem;
-  color: #000;
-}
-
-.portrait-undergrad-email {
-  font-size: 1rem;
-  color: #555;
-  white-space: nowrap;     /* prevents line break */
-}
-
-.portrait-undergrad-email a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.portrait-undergrad-email a:hover {
-  text-decoration: underline;
-}
+<div class="portrait-wrapper">
+  <div class="portrait" data-style="{{ include.style }}">
+    <span class="portrait-name">
+      {{ member.name }}
+    </span>
+    {% if email %}
+      <span class="portrait-email">
+        &lt;<a href="mailto:{{ email }}">{{ email }}</a>&gt;
+      </span>
+    {% endif %}
+  </div>
+</div>
