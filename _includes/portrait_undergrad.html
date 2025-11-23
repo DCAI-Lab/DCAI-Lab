@@ -1,4 +1,10 @@
+{% if include.lookup %}
+  {% assign member = site.members | where_exp: "m", "m.slug == include.lookup" | first %}
+{% else %}
+  {% assign member = include %}
+{% endif %}
 
+{% assign email = member.links.email | default: member.email %}
 
 <div class="portrait portrait-undergrad" data-style="{{ include.style }}">
   <span class="portrait-name" style="font-size:1.1rem;">
