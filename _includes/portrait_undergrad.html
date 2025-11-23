@@ -1,9 +1,32 @@
-<div class="portrait-undergrad {{ include.style }}">
-  <div class="name">{{ include.name }}</div>
+{% if include.lookup %}
+  {% assign member = site.members
+    | where_exp: "member", "member.slug == include.lookup"
+    | first
+  %}
+{% else %}
+  {% assign member = include %}
+{% endif %}
 
-  {% if include.email %}
-    <div class="email">
-      <a href="mailto:{{ include.email }}">{{ include.email }}</a>
+{%- comment -%}
+이메일은 두 가지 경로에서 시도:
+1) member.links.email (portrait.html 과 동일한 구조)
+2) member.email (데이터 파일에서 바로 email 필드를 쓴 경우)
+{%- endcomment -%}
+{% assign email = nil %}
+{% if member.links and member.links.email %}
+  {% assign email = member.links.email %}
+{% elsif member.email %}
+  {% assign email = member.email %}
+{% endif %}
+
+<div class="portrait-undergrad {{ include.style }}">
+  <div class="portrait-undergrad-name">
+    {{ member.name }}
+  </div>
+
+  {% if email %}
+    <div class="portrait-undergrad-email">
+      <a href="mailto:{{ email }}">{{ email }}</a>
     </div>
   {% endif %}
 </div>
