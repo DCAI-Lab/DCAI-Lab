@@ -56,7 +56,7 @@ nav:
 {%
   include list.html
   data="members"
-  component="portrait"
+  component="portrait_undergrad"
   filter="role == 'undergrad' and !alumni"
   style="tiny"
 %}
