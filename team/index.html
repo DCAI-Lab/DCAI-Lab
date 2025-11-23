@@ -507,13 +507,46 @@
 
 <h2 id="undergraduate-interns">Undergraduate Interns</h2>
 
-<div class="portrait-undergrad tiny">
-  <div class="portrait-undergrad-name">
-    Seongmin Lee
-  </div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--- ---
+</code></pre></div></div>
 
-  
-</div>
+<p>.portrait-undergrad {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;              /* 이름 ↔ 이메일 간 간격 <em>/
+  width: 100%;
+  padding: 6px 0;
+  margin: 4px 0;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  justify-content: flex-start;   /</em> 왼쪽 정렬 */
+}</p>
+
+<p>/* 이름 부분 */
+.portrait-undergrad-name {
+  font-family: var(–heading);
+  font-weight: var(–semi-bold);
+  font-size: 1.15rem;
+  color: #000;
+}</p>
+
+<p>/* 이메일은 바로 옆 <em>/
+.portrait-undergrad-email {
+  font-size: 1rem;
+  color: #555;
+  white-space: nowrap;   /</em> 줄바꿈 방지 */
+}</p>
+
+<p>.portrait-undergrad-email a {
+  color: inherit;
+  text-decoration: none;
+}</p>
+
+<p>.portrait-undergrad-email a:hover {
+  text-decoration: underline;
+}</p>
   </section>
 
 
