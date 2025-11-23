@@ -14,6 +14,15 @@
   line-height: 1.4;
 }
 
+.portrait.portrait-undergrad {
+  display: flex;                  // inline-flex → flex (block처럼)
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+  gap: 10px;
+}
+
 /* override tiny style exactly like portrait[data-style="tiny"] */
 .portrait[data-style="tiny"].portrait-undergrad {
   flex-direction: row;
