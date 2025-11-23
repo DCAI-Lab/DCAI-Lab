@@ -15,7 +15,7 @@ We look forward to collaborating with you in our research journey!
 ## Latest News
 
 - A paper on fine-tuning text-to-image generative model was accepted at WACV 2026.
-- A paper on subject-driven text-to-image generative model was posted at arXiv.
+- A paper on subject-driven text-to-image generative model was posted on arXiv.
 - A paper on vision-language model was accepted at ICCV 2025.
 - A paper on large vision language model was accepted at NAACL 2024.
 - DCAI Lab @ Korea University is launched!
