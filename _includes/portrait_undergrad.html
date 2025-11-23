@@ -4,6 +4,11 @@
   {% assign member = include %}
 {% endif %}
 
+{%- comment -%}
+이메일을 두 경로에서 찾음:
+1) member.links.email (기존 portrait 구조)
+2) member.email (YAML 직접 입력)
+{%- endcomment -%}
 {% assign email = member.links.email | default: member.email %}
 
 <div class="portrait portrait-undergrad" data-style="{{ include.style }}">
