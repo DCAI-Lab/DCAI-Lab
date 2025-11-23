@@ -1,0 +1,9 @@
+<div class="portrait-undergrad {{ include.style }}">
+  <div class="name">{{ include.name }}</div>
+
+  {% if include.email %}
+    <div class="email">
+      <a href="mailto:{{ include.email }}">{{ include.email }}</a>
+    </div>
+  {% endif %}
+</div>
