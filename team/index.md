@@ -48,3 +48,15 @@ nav:
   filter="role == 'phd' and !alumni"
   style="tiny"
 %}
+
+
+## Undergraduate Interns
+
+
+{%
+  include list.html
+  data="members"
+  component="portrait"
+  filter="role == 'undergrad' and !alumni"
+  style="tiny"
+%}
