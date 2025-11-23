@@ -1,32 +1,40 @@
-{% if include.lookup %}
-  {% assign member = site.members
-    | where_exp: "member", "member.slug == include.lookup"
-    | first
-  %}
-{% else %}
-  {% assign member = include %}
-{% endif %}
+---
+---
 
-{%- comment -%}
-이메일은 두 가지 경로에서 시도:
-1) member.links.email (portrait.html 과 동일한 구조)
-2) member.email (데이터 파일에서 바로 email 필드를 쓴 경우)
-{%- endcomment -%}
-{% assign email = nil %}
-{% if member.links and member.links.email %}
-  {% assign email = member.links.email %}
-{% elsif member.email %}
-  {% assign email = member.email %}
-{% endif %}
+.portrait-undergrad {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;              /* 이름 ↔ 이메일 간 간격 */
+  width: 100%;
+  padding: 6px 0;
+  margin: 4px 0;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  justify-content: flex-start;   /* 왼쪽 정렬 */
+}
 
-<div class="portrait-undergrad {{ include.style }}">
-  <div class="portrait-undergrad-name">
-    {{ member.name }}
-  </div>
+/* 이름 부분 */
+.portrait-undergrad-name {
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  font-size: 1.15rem;
+  color: #000;
+}
 
-  {% if email %}
-    <div class="portrait-undergrad-email">
-      <a href="mailto:{{ email }}">{{ email }}</a>
-    </div>
-  {% endif %}
-</div>
+/* 이메일은 바로 옆 */
+.portrait-undergrad-email {
+  font-size: 1rem;
+  color: #555;
+  white-space: nowrap;   /* 줄바꿈 방지 */
+}
+
+.portrait-undergrad-email a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.portrait-undergrad-email a:hover {
+  text-decoration: underline;
+}
