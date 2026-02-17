@@ -1,22 +1,22 @@
 ---
+layout: none
 ---
 
-# Welcome to Data-Centric AI Lab @ Korea University!
-
-The Data-Centric AI (DCAI) Lab advances state-of-the-art artificial intelligence by rethinking the role of data. Our mission is to tackle diverse challenges in areas such as computer vision, multi-modal learning, and generative AI by exploring how data can fuel advances in AI. From a data-centric standpoint, our research interests include data-efficient learning (self-supervised, weakly supervised, semi-supervised, and unsupervised learning), transfer learning, and synthetic data generation. We strive to advance AI systems that can learn effectively from limited or imperfect data, and to develop innovative methods that push the boundaries of what is possible through data-driven approaches.
-
-We are currently looking for undergraduate interns, master’s, and Ph.D. students.
-We welcome **self-motivated students** who enjoy identifying and solving problems independently.
-If you are interested, please contact Jungbeom (jbeomlee@korea.ac.kr) with your CV and transcript.
-We look forward to collaborating with you in our research journey!
-
-{% include section.html %}
-
-## Latest News
-
-- Jungbeom gave an invited talk at Samsung Advanced Institute of Technology (SAIT, 삼성종합과학기술원).
-- A paper on fine-tuning text-to-image generative model was accepted at WACV 2026.
-- A paper on subject-driven text-to-image generative model was posted on arXiv.
-- A paper on vision-language model was accepted at ICCV 2025.
-- A paper on large vision language model was accepted at NAACL 2024.
-- DCAI Lab @ Korea University is launched!
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=https://ku-vailab.github.io/" />
+    <link rel="canonical" href="https://ku-vailab.github.io/" />
+    <script>
+      window.location.replace("https://ku-vailab.github.io/");
+    </script>
+  </head>
+  <body>
+    <p>
+      새 홈페이지로 이동합니다:
+      <a href="https://ku-vailab.github.io/">https://ku-vailab.github.io/</a>
+    </p>
+  </body>
+</html>
